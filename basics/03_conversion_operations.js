@@ -43,5 +43,5 @@ console.log("1" + 2 + 2)
 console.log(1+ 2 + "2")
 
 let gamecounter = 100
-gamecounter++
+gamecounter++   
 console.log(gamecounter);
