@@ -28,3 +28,20 @@ console.log(someNumber)
 let StringNumber = String(someNumber);
 console.log(typeof StringNumber)
 console.log(StringNumber)
+
+// ***************opearations*******************
+
+console.log("**********");
+let str1 = "hello"
+let str2 = " abhishek"
+
+console.log(str1+str2)
+
+console.log("1" + 2)
+console.log(1 + "2")
+console.log("1" + 2 + 2)
+console.log(1+ 2 + "2")
+
+let gamecounter = 100
+gamecounter++
+console.log(gamecounter);
