@@ -16,7 +16,7 @@ const anotherId = Symbol('123')
 console.log(id === anotherId)
  
 // bigInt
-const bigNumber = 74837489574857438574839574395743985739857349875983749875574754753475479n
+const bigNumber = 748374895783749875574754753475479n
 
 console.log(bigNumber)  
 
@@ -38,7 +38,34 @@ const myFunction = function(){
     console.log("Hello World")
 }
 
-console.log(typeof myFunction);
-console.log(typeof myObj);
-console.log(typeof heros);
+// console.log(typeof myFunction);
+// console.log(typeof myObj);
+// console.log(typeof heros);
 
+
+// **************************************************************
+
+// Stack And Heap Memory -> stack used in primitive like number, string , boolean and(there is copy passed) 
+//                          heap is used in non primitive like array, object (there is Reference passed)
+
+console.log("**********STACK AND HEAP MEMORY********");
+
+
+let myYoutubeName = "abhishek kumar"
+
+let anotherName = myYoutubeName
+anotherName = "sonu"
+
+console.log(anotherName);
+console.log(myYoutubeName);
+
+let userOne = {
+    email : "abhishek@gmail.com", 
+    upi : "abhi@123"
+}
+
+let UserTwo = userOne
+
+UserTwo.email = "sonu@gmail.com"
+
+console.log(UserTwo.upi);
