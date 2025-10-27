@@ -29,4 +29,38 @@ function loginuserName(userName){
 // loginuserName("abhishek")
 // console.log(loginuserName("abhishek"));
 
+// shopping cart Situation
 
+function calculateCartPrice (...num1) { 
+    return num1
+}
+
+// console.log(calculateCartPrice(200,500,300));
+
+// through object
+const user1 = { 
+    username : "Abhishek",
+    price : 304
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and the price is ${anyobject.price}`);
+}   
+
+// handleObject(user1)
+
+// function mai object pass
+// handleObject({
+//     username : "somu",
+//     price : 804
+// })
+
+
+// in Array
+
+let Arrayuser = [200,13,44,56]
+
+function arrayfinder(getarray){
+    return getarray[1]
+}
+
+console.log(arrayfinder(Arrayuser));
