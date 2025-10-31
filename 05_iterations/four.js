@@ -8,6 +8,7 @@ const myObj = {
     game4 : 'BL2'
 }
 
+
 for (const key in myObj) {
     // console.log(key);
 } 
@@ -67,3 +68,4 @@ myCoding.forEach( (item) => {
     console.log(item.langName);
     
 })
+
