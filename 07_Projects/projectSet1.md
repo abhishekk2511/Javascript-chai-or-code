@@ -5,7 +5,7 @@
 
 # Solution code
 
-## project 1
+## project 1 --> COLOR CHANGER
 
 ```javascript
 
@@ -43,28 +43,32 @@ buttons.forEach(function (button){
 
 ```
 
-## project 2 solution
+## project 2 --> BMI CALCULATOR 
 
 ```javascript
 const form = document.querySelector('form');
-// this usecase will give you empty
-// const height = parseInt(document.querySelector('#height').value)
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
+  // select height and weight and the value is convert into int(string to int through parseInt)
+
   const height = parseInt(document.querySelector('#height').value);
   const weight = parseInt(document.querySelector('#weight').value);
-  const results = document.querySelector('#results');
+  const result = document.querySelector('#result');
 
   if (height === '' || height < 0 || isNaN(height)) {
-    results.innerHTML = `Please give a valid height ${height}`;
-  } else if (weight === '' || weight < 0 || isNaN(weight)) {
-    results.innerHTML = `Please give a valid weight ${weight}`;
+    result.innerHTML = `Please Give a Valid height ${height}`;
+  }
+
+  if (weight === '' || weight < 0 || isNaN(weight)) {
+    result.innerHTML = `Please Give a Valid weight ${weight}`;
   } else {
-    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
-    //show the result
-    results.innerHTML = `<span>${bmi}</span>`;
+    const BMI = (weight / ((height * height) / 10000)).toFixed(2);
+
+    // show in Result
+    result.innerHTML = `<span>${BMI}</span>`;
+
   }
 });
 
