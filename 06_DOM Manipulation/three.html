@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    
+</body>
+<script>
+    const container = document.createElement('div')
+    console.log(container);
+    container.className = 'main'
+    container.id = Math.round(Math.random() * 10 + 1)
+    container.setAttribute('title', 'generated-title')
+    container.style.backgroundColor = 'teal'
+    container.style.padding = '15px'
+    container.style.borderRadius = '15px'
+
+    // container.innerText = 'Abhishek Kumar'
+
+    const addText = document.createTextNode("abhishek Kumar")
+    container.appendChild(addText)
+
+    // connecting div to body
+    document.body.appendChild(container )
+
+</script>
+</html>

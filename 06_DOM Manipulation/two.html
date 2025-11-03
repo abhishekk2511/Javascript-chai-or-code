@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM || Chai Or Code</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+
+<!-- JavaScript Part -->
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);  //gives HTML collection , array like structure
+    // console.log(parent.children[1].innerHTML);
+
+
+    // applying for loop in HTML collection
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i]. innerText);
+    // }
+    
+    parent.children[1].style.color = "blue"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    
+    const day = document.querySelector('.day')
+    // console.log(day);
+
+    // console.log(day.parentNode);
+    // console.log(day.parentElement);
+    // console.log(day.nextElementSibling);
+
+
+    // childNode gives 15 childnode
+    console.log("NODES : ", parent.childNodes);
+    
+
+    
+    
+    
+        
+</script>
+</html>
